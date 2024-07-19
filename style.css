@@ -26,6 +26,7 @@ body::-webkit-scrollbar {
     font-style: normal;
     position: fixed;
     top: 0;
+    z-index: 1;
 }
 
 .nav-logo {
@@ -91,10 +92,14 @@ body::-webkit-scrollbar {
 
 }
 
-.log-select {
-    border: none;
+.log-span {
     margin-left: 4px;
     font-size: 1.1rem;
+}
+
+.log-select {
+    border: 0px;
+    padding: 0px;
     background-color: transparent;
 }
 
@@ -163,36 +168,27 @@ body::-webkit-scrollbar {
     font-size: 0.9rem;
 }
 
-.wrapper {
-    width: 1334px;
-    display: flex;
-    animation: slide 10s infinite;
-    margin-left: 10px;
-}
 
-.wrapper img {
-    width: 100%;
-}
 
 /* sliding */
 
 .slideshow-container {
-    position: relative;
+    position: sticky;
     margin: auto;
     width: 1334px;
     margin-top: 10px;
     overflow: hidden;
+    display: block;
 }
 
 .wrapper {
     width: 1334px;
     display: flex;
     animation: slide 10s infinite;
-
 }
 
 .wrapper img {
-    width: 1325px;
+    width: 1334px;
 }
 
 
